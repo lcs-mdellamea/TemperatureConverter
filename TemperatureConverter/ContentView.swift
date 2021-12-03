@@ -68,17 +68,17 @@ struct ContentView: View {
                 let currentcelsius = Int(celsius)
                 
                 if currentcelsius >= -50 && currentcelsius < 20 {
-                    feedback("Make sure to bring a BIG jacket!")
+                    feedback = "Dress for cold weather!"
                 } else if currentcelsius >= -20 && currentcelsius < 0 {
-                    feedback("Dress warmly!")
+                    feedback = "Dress warmly!"
                 } else if currentcelsius >= 0 && currentcelsius < 10 {
-                    feedback("Dress for cold weather")
+                    feedback = "Dress for neutral weather!"
                 } else if currentcelsius >= 10 && currentcelsius < 20 {
-                    feedback("Dress for slightly chilly weather!")
+                    feedback = "Dress for slightly chilly weather!"
                 } else if currentcelsius >= 20 && currentcelsius < 30 {
-                    feedback("No jacket needed!")
+                    feedback = "Hot weather, don't bring a jacket!"
                 } else if currentcelsius >= 30 && currentcelsius < 50 {
-                    feedback("No layers necessary!!!")
+                    feedback = "VERY HOT!"
                 }
             }, label: {
                 Text("Submit")
